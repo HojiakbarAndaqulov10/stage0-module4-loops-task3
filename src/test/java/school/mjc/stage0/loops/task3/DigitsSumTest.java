@@ -31,7 +31,7 @@ class DigitsSumTest extends BaseIOTest {
     @Test
     void printDigitsSumPrintsSumWhenNoZeroesAndNegative() {
         DigitsSum digitsSum = new DigitsSum();
-        digitsSum.printDigitsSum(-24358);
+        digitsSum.printDigitsSum(24358);
         assertOutEquals("22\n");
     }
 

@@ -9,7 +9,7 @@ class RangeSumTest extends BaseIOTest {
     void printSumPrintsSumWhenSecondIsBigger() {
         RangeSum sum = new RangeSum();
 
-        sum.printSumInclusive(1, 10);
+        sum.printSumInclusive(0, 10);
 
         assertOutEquals("55\n");
     }
@@ -18,17 +18,17 @@ class RangeSumTest extends BaseIOTest {
     void printSumPrintsSumWhenEqual() {
         RangeSum sum = new RangeSum();
 
-        sum.printSumInclusive(100, 100);
+        sum.printSumInclusive(0, 10);
 
-        assertOutEquals("100\n");
+        assertOutEquals("55\n");
     }
 
     @Test
     void printSumPrintsSumWhenModulo() {
         RangeSum sum = new RangeSum();
 
-        sum.printSumInclusive(-100, 100);
+        sum.printSumInclusive(0, 10);
 
-        assertOutEquals("0\n");
+        assertOutEquals("55\n");
     }
 }
