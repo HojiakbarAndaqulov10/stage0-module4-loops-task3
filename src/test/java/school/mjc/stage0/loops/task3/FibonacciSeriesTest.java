@@ -28,7 +28,7 @@ class FibonacciSeriesTest extends BaseIOTest {
 
         fibonacci.printFibonacci(5);
 
-       /* assertOutEquals("0\n1\n1\n2\n3\n");*/
+        assertOutEquals("0\n1\n1\n2\n3\n");
     }
 
     @Test
@@ -36,11 +36,11 @@ class FibonacciSeriesTest extends BaseIOTest {
         Path path = Paths.get("src/main/java/school/mjc/stage0/loops/task3/FibonacciSeries.java");
         List<String> strings = Files.readAllLines(path);
 
-     /*   List<String> result = strings.stream()
+        List<String> result = strings.stream()
                 .filter(line -> line.contains("printFibonacci"))
                 .collect(Collectors.toList());
 
-        assertEquals(1, result.size());*/
+        assertEquals(1, result.size());
     }
 
 }

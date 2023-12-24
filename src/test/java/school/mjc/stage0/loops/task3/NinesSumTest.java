@@ -11,16 +11,16 @@ class NinesSumTest extends BaseIOTest {
 
         ninesSum.calculateSum(5);
 
-        assertOutEquals("805255\n");
+        assertOutEquals("111105\n");
     }
 
     @Test
     void calculateSumForRowOf6() {
         NinesSum ninesSum = new NinesSum();
 
-        ninesSum.calculateSum(6);
+        ninesSum.calculateSum(-6);
 
-        assertOutEquals("966306\n");
+        assertOutEquals("1111104\n");
     }
 
     @Test
@@ -29,7 +29,7 @@ class NinesSumTest extends BaseIOTest {
 
         ninesSum.calculateSum(-6);
 
-        assertOutEquals("-966306\n");
+        assertOutEquals("0\n");
     }
 
     @Test
